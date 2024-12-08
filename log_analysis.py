@@ -15,7 +15,6 @@ log_pattern = re.compile(
 )
 failed_login_message = "Invalid credentials"
 
-# Initialize counters and data structures
 ip_counter = Counter()
 endpoint_counter = Counter()
 failed_login_attempts = Counter()
@@ -85,5 +84,4 @@ if suspicious_ips:
 else:
     print("No suspicious activity detected.")
 
-# Indicate where results are saved
 print(f"\nResults saved to: {output_csv_path}")
